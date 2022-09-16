@@ -7,29 +7,25 @@ int main(){
 
   int cases;// number of cases
   int N; //number 1-10 
-  int factorial = 1;//answer
-  
-  
 
+
+  
   cin >> cases;
-  for (int i = 0; i < cases; i++){
+  for (int a = 0; a < cases; a++){
+
     cin >> N;
+  int fact = 1;
+  for (int i = 1; i <= N; i++){
+      fact *= i;
+      fact %= 10;
+  }
+  cout << fact << endl;
 
-
-    
-    for(int a = 1; a <= N; ++a){
-      factorial *= a;
-      }
-
-    
-    cout << "factorial is " << factorial << endl;
-
-
-    
     }
-    cout << endl << endl;
-  
     
+  
+  
+
   }
     
   
