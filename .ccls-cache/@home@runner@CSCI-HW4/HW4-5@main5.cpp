@@ -11,7 +11,7 @@ int main(){
   int N;       // number of cases
   const double g = 9.81; // 1/2 of acceleration due to earths gravity
   double v0;   // velocity at 0
-  double theta;
+  double theta;// angle of launch
   double x1;   // distance from cannon to wall
   double h1;   // lower edge of wall
   double h2;   // upper edge of wall
@@ -24,6 +24,7 @@ int main(){
   cin >> N;
   for (int i = 0; i < N; i++){
 
+    if (v0 > 0) && (v0 <= 200)
     cin >> v0 >> theta >> x1 >> h1 >> h2;
 
     //theta = theta * PI / 180; // convert from degrees to radians
