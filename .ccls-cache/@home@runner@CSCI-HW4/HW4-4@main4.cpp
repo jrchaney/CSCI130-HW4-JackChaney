@@ -15,12 +15,9 @@ int main(){
 
     cin >> l;
     
-
     sum += l;
-    
-
-    
-  }
+  
+    }
 
     N = N - 1;
     sum = sum - N;
